@@ -4,21 +4,21 @@
 
 **Example**
 
-let arr = [2, 4, 6, 8];
-const returnArr = arr.forEach(num => {
-  return num * 2;
-});
-console.log(returnArr) // undefined
+    let arr = [2, 4, 6, 8];
+    const returnArr = arr.forEach(num => {
+      return num * 2;
+    });
+    console.log(returnArr) // undefined
 
 - **map()** - map method also calls the provided function on each element in the array but also returns the new array of the same size.
 
 **Example**
 
-let arr = [2, 4, 6, 8];
-const returnArr = arr.map(num => {
-  return num * 2;
-});
-console.log(returnArr) // [4, 8, 12, 16]
+    let arr = [2, 4, 6, 8];
+    const returnArr = arr.map(num => {
+      return num * 2;
+    });
+    console.log(returnArr) // [4, 8, 12, 16]
 
 **When to use map() and forEach()**
 
