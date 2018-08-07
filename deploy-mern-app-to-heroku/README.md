@@ -17,6 +17,7 @@
 8. Click on the Deploy tab and click on Heroku Git under Deployment method section.
 
 9. Copy the below heroku git command:
+
     $ heroku git:remote -a 'your-app-name'
 
 10. In the terminal window, navigate to the MERN app directory and paste the above command and enter.
@@ -24,18 +25,21 @@
 11. Now in the project config folder, you have a 'keys.js' file created. Create two more files, 'keys_prod.js' and 'keys_dev.js'.
 
 12. **keys_dev**
+
     module.exports = {
       mongoURI: "your-mongodb-uri",
       secrets: 'secret'
     };
 
 13. **keys_prod**
+
     module.exports = {
       mongoURI: process.env.MONGO_URI,
       secrets: process.env.SECRET_OR_KEY
     };
 
 14. **keys.js**
+
     if(process.env.NODE_ENV === 'production') {
       module.exports = require('./keys_prod');
     } else {
@@ -43,6 +47,7 @@
     }
 
 15. Now in the 'server.js' file, below the routes, set a static folder for the production. (You must have built the react app for production and build folder must be present in your project folder).
+
     // Server static assets if in production
     if(process.env.NODE_ENV === 'production') {
       // set a static folder
