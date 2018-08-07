@@ -18,7 +18,7 @@
 
 9. Copy the below heroku git command:
 
-    $ heroku git:remote -a 'your-app-name'
+    `$ heroku git:remote -a 'your-app-name'`
 
 10. In the terminal window, navigate to the MERN app directory and paste the above command and enter.
 
@@ -26,33 +26,41 @@
 
 12. **keys_dev**
 
-    module.exports = {
-      mongoURI: "your-mongodb-uri",
-      secrets: 'secret'
-    };
+```javascript
+module.exports = {
+  mongoURI: "your-mongodb-uri",
+  secrets: 'secret'
+};
+```
 
 13. **keys_prod**
 
-    module.exports = {
-      mongoURI: process.env.MONGO_URI,
-      secrets: process.env.SECRET_OR_KEY
-    };
+```javascript
+module.exports = {
+  mongoURI: process.env.MONGO_URI,
+  secrets: process.env.SECRET_OR_KEY
+};
+```
 
 14. **keys.js**
 
-    if(process.env.NODE_ENV === 'production') {
-      module.exports = require('./keys_prod');
-    } else {
-      module.exports = require('./keys_dev');
-    }
+```javascript
+if(process.env.NODE_ENV === 'production') {
+  module.exports = require('./keys_prod');
+} else {
+  module.exports = require('./keys_dev');
+}
+```
 
 15. Now in the 'server.js' file, below the routes, set a static folder for the production. (You must have built the react app for production and build folder must be present in your project folder).
 
-    // Server static assets if in production
-    if(process.env.NODE_ENV === 'production') {
-      // set a static folder
-      app.use(express.static('client/build'));
-      app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-      });
-    }
+```javascript
+// Server static assets if in production
+if(process.env.NODE_ENV === 'production') {
+  // set a static folder
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+```
