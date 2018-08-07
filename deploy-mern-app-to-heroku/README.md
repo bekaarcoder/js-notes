@@ -72,11 +72,11 @@ if(process.env.NODE_ENV === 'production') {
 17. Now go to heroku dashboard and click on the app. Go the the settings tab and click on "Reveal Congif Vars".
 
 18. Enter first key-value as 
-    KEY - MONGO_URI, VALUE - 'your-mongo-uri'
+    `KEY - MONGO_URI, VALUE - 'your-mongo-uri'`
     and then click on add.
 
 19. Enter second key-value as
-    KEY - SECRET_OR_KEY, VALUE - secret
+    `KEY - SECRET_OR_KEY, VALUE - secret`
     and then click on add.
 
 20. Now run the below commands to deploy your app to heroku
