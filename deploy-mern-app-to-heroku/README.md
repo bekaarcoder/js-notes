@@ -67,21 +67,17 @@ if(process.env.NODE_ENV === 'production') {
 
 16. Open `package.json` file and add the below key-value for the 'scripts'
 
-`"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"`
+    `"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"`
 
 17. Now go to heroku dashboard and click on the app. Go the the settings tab and click on "Reveal Congif Vars".
 
 18. Enter first key-value as 
+    KEY - MONGO_URI, VALUE - 'your-mongo-uri'
+    and then click on add.
 
-KEY - MONGO_URI, VALUE - 'your-mongo-uri'
-
-and then click on add.
-
-19. ENter second key-value as
-
-KEY - SECRET_OR_KEY, VALUE - secret
-
-and then click on add.
+19. Enter second key-value as
+    KEY - SECRET_OR_KEY, VALUE - secret
+    and then click on add.
 
 20. Now run the below commands to deploy your app to heroku
 
