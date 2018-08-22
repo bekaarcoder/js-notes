@@ -6,12 +6,13 @@
 - Can't handle fetching data.
 - Easy to write.
 
-
-    const Header = () => {
-      return (
-        <Text>Hi There!</Text>
-      )
-    }
+```javascript
+const Header = () => {
+  return (
+    <Text>Hi There!</Text>
+  )
+}
+```
 
 
 **Class Component**
@@ -21,11 +22,12 @@
 - Knows when it gets rendered to the device (userful for data fetching).
 - More code to write.
 
-
-    class Header extends Component {
-      render() {
-        return (
-          <Text>Hi There!</Text>
-        )
-      }
-    }
+```javascript
+class Header extends Component {
+  render() {
+    return (
+      <Text>Hi There!</Text>
+    )
+  }
+}
+```
