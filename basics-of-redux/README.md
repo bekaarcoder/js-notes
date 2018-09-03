@@ -7,3 +7,7 @@
 
 
 ![basics-of-redux](images/basics-of-redux.png)
+
+**Redux explained with an example**
+
+![example](images/redux-working.png)
