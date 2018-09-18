@@ -29,3 +29,22 @@ const object1 = {
 console.log(Object.values(object1));
 // output: Array ["foo", "bar"]
 ```
+
+**Convert Object to Array**
+
+To convert object to array, we will use Object.keys() method.
+
+```javascript
+const object1 = {
+  a: "foo",
+  b: "bar"
+};
+const objToArr = Object.keys(object1).map(key => {
+  return {
+    [key]: object1[key]
+  }
+});
+console.log(objToArr);
+/* output
+Array [{a: "foo"}, {b: "bar"}] */
+```
