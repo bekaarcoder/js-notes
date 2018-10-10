@@ -1,5 +1,6 @@
 # JavaScript Notes
 
+- [JavaScript Tricks](https://github.com/shashanksmaty/js-notes/tree/master/javascript-tricks)
 - [map vs foreach](https://github.com/shashanksmaty/js-notes/tree/master/map-vs-foreach)
 - [Deploy a MERN app to Heroku](https://github.com/shashanksmaty/js-notes/tree/master/deploy-mern-app-to-heroku)
 - [React vs React Native](https://github.com/shashanksmaty/js-notes/tree/master/react-vs-reactnative)
