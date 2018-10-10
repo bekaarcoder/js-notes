@@ -2,7 +2,7 @@
 
 1. **Copy an array to another array without changing the object reference**
 
-    - Using **arr.splice()** method - We can copy an arrar to another array without changing the main array using the splice() method in javascript.
+    - Using **arr.splice()** method - We can copy an array to another array without changing the main array using the splice() method in javascript.
 
       ```javascript
       let arr1 = ["rick", "morty", "john", "jane"];
