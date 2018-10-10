@@ -9,4 +9,4 @@
 - [Converting Object To Array](https://github.com/shashanksmaty/js-notes/tree/master/convert-object-to-array)
 
 
-## [CSS Tricks]()
+## [CSS Tricks](https://github.com/shashanksmaty/js-notes/tree/master/css-tricks)
