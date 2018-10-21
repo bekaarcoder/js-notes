@@ -1,23 +1,23 @@
 # React LifeCycle Methods
 
-constructor()
+1. constructor()
 
-~~componentWillMount()~~ -> componentDidMount()
+2. ~~componentWillMount()~~ -> componentDidMount()
 
-render()
+3. render()
 
-componentDidMount()
+4. componentDidMount()
 
-~~componentWillReceiveProps()~~ -> getDerivedStateFromProps()
+5. ~~componentWillReceiveProps()~~ -> getDerivedStateFromProps()
 
-shouldComponentUpdate()
+6. shouldComponentUpdate()
 
-~~componentWillUpdate()~~ -> componentDidUpdate
+7. ~~componentWillUpdate()~~ -> componentDidUpdate
 
-componentDidUpdate()
+8. componentDidUpdate()
 
-componentWillUnmount()
+9. componentWillUnmount()
 
-componentDidCatch()
+10. componentDidCatch()
 
 **componentWillMount(), componentWillReceiveProps() and componentWillUpdate()** are deprecated in React 16.3.
