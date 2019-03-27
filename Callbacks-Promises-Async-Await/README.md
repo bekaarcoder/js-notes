@@ -82,7 +82,11 @@ Async/Await is a new way to write asynchronous code. It is built on top of promi
 > **Callback Hell** - The situation where the callbacks are nested within other callbacks several level deep, potentially making it difficult to understand and maintain the code.
 
 Async functions are created by prepending the word **async** before the function declaration.
-`async function asyncFn() {}`
+```js
+async function asyncFn() {
+    
+}
+```
 Asynchronous function can be paused with **await**, the keywork that can only be used inside an async function. Await returns whatever the async function returns when it is done.
 
 ```js
