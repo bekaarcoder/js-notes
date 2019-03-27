@@ -41,4 +41,4 @@ function createPost(post, callback) {
 
 // Passing the getPosts function as an argumemt
 createPost({ title: "Post Three", body: "This is post three" }, getPosts);
-``
+```
