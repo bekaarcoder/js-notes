@@ -8,6 +8,8 @@
 - [Basics Of Redux](https://github.com/shashanksmaty/js-notes/tree/master/basics-of-redux)
 - [Converting Object To Array](https://github.com/shashanksmaty/js-notes/tree/master/convert-object-to-array)
 - [React Lifecycle Methods](https://github.com/shashanksmaty/js-notes/tree/master/react-lifecycle-methods)
+- [Callback, Promise and async-await]()
+- [Call, Apply and Bind]()
 
 
 ## [CSS Tricks](https://github.com/shashanksmaty/js-notes/tree/master/css-tricks)
