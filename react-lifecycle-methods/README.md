@@ -48,3 +48,16 @@ This is a suitable place to implement any side effect operation.
 ### componentDidUpdate()
 
 This method is called after every render occurs. You can do comparison between the previous and current props and state.
+
+## Unmounting
+
+### componentWillUnmount()
+
+This method is invoked immediately before an component is unmounted and detroyed. This is place to do some cleanup like:
+
+- Invalidating timers
+- Cancelling network requests
+- Removing event handlers directly put on DOM
+- Cleaning up subscriptions
+
+> Calling setState() here is useless.
