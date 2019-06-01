@@ -1,23 +1,50 @@
 # React LifeCycle Methods
 
-1. constructor()
+Every component comes with methods that allow developers to update application state and reflect the changes to the UI before/after key react "events".
 
-2. ~~componentWillMount()~~ -> componentDidMount()
+There are three main phases:-
 
-3. render()
+1. Mounting
+2. Updating
+3. Unmounting
 
-4. componentDidMount()
+## Mounting
 
-5. ~~componentWillReceiveProps()~~ -> getDerivedStateFromProps()
+### constructor()
 
-6. shouldComponentUpdate()
+Often used for initializing state or binding event handlers to class instance.
 
-7. ~~componentWillUpdate()~~ -> componentDidUpdate
+```js
+class MyConponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+}
+```
 
-8. componentDidUpdate()
+### render()
 
-9. componentWillUnmount()
+After the constructor, React calls render(). It tells react what should be displayed. React updates the DOM to match the object of render().
 
-10. componentDidCatch()
+### componentDidMount()
 
-**componentWillMount(), componentWillReceiveProps() and componentWillUpdate()** are deprecated in React 16.3.
+- This method runs after the component is mounted.
+- "Mounting" is the first time the component is rendered to DOM.
+- This is a good place to load any data via AJAX or setup subscriptions/timers.
+- Calling setState() here will trigger re-render.
+
+## Updating
+
+This is a suitable place to implement any side effect operation.
+
+- syncing up with localStorage.
+- auto-saving
+- updating DOM for uncontrolled components
+
+### componentDidUpdate()
+
+This method is called after every render occurs. You can do comparison between the previous and current props and state.
